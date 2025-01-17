@@ -1,4 +1,4 @@
-package greetings
+package main
 
 import (
     "errors"
@@ -21,5 +21,5 @@ func randomFormat() string {
         "Great to see you, %v!",
         "Hail, %v! Well met!",
     }
-    return formats[rand.Intn(len(formats))]
+    return formats[rand.Intn(3)]
 }
